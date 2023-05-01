@@ -7,7 +7,9 @@
     "start:dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
     "build": "tsup src --out-dir build",
-    "lint": "eslint src --ext .ts --fix"
+    "lint": "eslint src --ext .ts --fix",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -20,7 +22,9 @@
     "prisma": "4.13.0",
     "tsup": "6.7.0",
     "tsx": "3.12.6",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "vite-tsconfig-paths": "4.2.0",
+    "vitest": "0.30.1"
   },
   "dependencies": {
     "@prisma/client": "4.13.0",
