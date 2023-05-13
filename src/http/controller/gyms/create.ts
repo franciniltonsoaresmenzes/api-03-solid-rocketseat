@@ -1,4 +1,3 @@
-import { UserAlreadyExists } from '@/use-cases/erros/user-already-exists'
 import { makeCreateGymUseCase } from '@/use-cases/factory/make-create-gym-use-case'
 import { FastifyReply, FastifyRequest } from 'fastify'
 import { z } from 'zod'
