@@ -1,6 +1,37 @@
-# App
+<h2 align="center">
+  <div>
+    <img alt="Logo" width="100" title="#logo" src="preview/icon.svg" />
+  </div>
+</h2>
 
-GymPass style app.
+<h1 align="center">
+  API Node.js com SOLID | GymPass API REST 💻🚀 
+ <h1>
+
+ 
+<h1 align="center">
+  <div style="display: flex; flex-direction: row;">
+    <img width="400" style="border-radius: 10px" height="auto" alt="Class-01" title="Class-01" src="./preview/preview.gif" />
+    <img width="400" style="border-radius: 10px" height="auto" alt="Class-02" title="Class-02" src="./preview/test-unit.gif" />
+  </div>
+</h1>
+
+API REST desenvolvida no módulo Ignite da Rocketseat. O projeto utiliza conceitos de clean architecture, factory pattern, autenticação JWT e geolocalização.
+
+A aplicação GymPass tem como objetivo gerenciar o tráfego de clientes em academias. Os usuários podem realizar o check-in nas academias, porém o check-in só é permitido se o usuário estiver a uma distância de até 100 metros da academia.
+
+
+<h2 id="technologies"> 🛠 Tecnologias utilizadas: </h2>
+
+  - `prisma`: ORM para banco de dados.
+  - `supertest`: Testes de API.
+  - `tsup`: Compilação TypeScript.
+  - `tsx`: Suporte para TSX.
+  - `typescript`: Linguagem de programação.
+  - `vitest`: Ferramenta de teste.
+  - `fastify`: Framework web (Fastify).
+  - `zod`: Validação de dados (Zod).
+
 ## RFs (Requisitos funcionais)
 
 - [x] Deve ser possível se cadastrar;
@@ -29,3 +60,31 @@ GymPass style app.
 - [x] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
 - [x] Todas listas de dados precisam estar paginadas com 20 itens por página;
 - [x] O usuário deve ser identificado por um JWT (JSON Web Token);
+
+<h2 id="usage" > 👷 Requisitos </h2>
+
+Install git, node and yarn (or npm).
+
+```bash
+# Clone Repository
+$ git clone https://github.com/franciniltonsoaresmenzes/api-03-solid-rocketseat.git
+
+# Go to server folder
+$ cd api-03-solid-rocketseat 
+
+# Install Dependencies
+$ npm install
+
+
+# rename file .env.example to .env
+
+# run docker compose
+$ docker compose up -d
+
+# run prisma
+$ npx prisma migrate dev
+
+# Run Tests
+$ npm run test
+$ npm run test:e2e
+```
